@@ -1,26 +1,21 @@
-let money = prompt("Ваш бюджет на месяц", "100");
-let time = prompt("Введите дату в формате", "YYYY-MM-DD");
-let answer1 = prompt("Введите обязательную статью расходов в этом месяце", "");
-let answer2 = prompt("Во сколько обойдется ?", "");
+let money = prompt("Ваш бюджет на месяц?", ''),
+	  time = prompt('Введите дату в формате YYYY-MM-DD', '');
 
 let appData = {
-  budget: money,
-  timeData: time,
-  optionalExpenses: {},
-  income: [],
-  savings: true,
-  expenses: {
-    answer1: answer2
-  }
-}
+	budget: money,
+	expenses: {},
+	optionalExpenses: {},
+	income: [],
+	timeData: time,
+	savings: false
+};
 
-alert(money / 30);
+let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+    a2 = prompt("Во сколько обойдется?", ''),
+    a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+    a4 = prompt("Во сколько обойдется?", '');
 
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
 
-/* 1)Сколько типов данных существует в JS?
-Строка,число,булевое значение,объект,null,undefeined
-   2)Как вывести информацию в консоль?
-console.log();
-   3)Какая функция операторов || и &&?
-Проверяют операнды и в результате сравнений даёт значение true & false
-*/
+alert(appData.budjet / 30);
