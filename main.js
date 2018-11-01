@@ -1,7 +1,7 @@
 let money = prompt("Ваш бюджет на месяц", "100");
 let time = prompt("Введите дату в формате", "YYYY-MM-DD");
 let answer1 = prompt("Введите обязательную статью расходов в этом месяце", "");
-let answer2 = prompt("Во сколько обойдется?", "");
+let answer2 = prompt("Во сколько обойдется ?", "");
 
 let appData = {
   budget: money,
